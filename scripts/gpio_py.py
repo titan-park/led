@@ -11,10 +11,6 @@ GPIO.output(23, False)
 GPIO.setup(24, GPIO.OUT)
 GPIO.output(24, False)
 
-dt = 0
-dtMax = 1024
-dtMin = 0
-
 def callback(data):
 	rospy.loginfo(rospy.get_caller_id() + "I heard %s", data.data)
 
