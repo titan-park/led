@@ -38,7 +38,7 @@ def callback(data):
 def gpio_py():
 	rospy.init_node('gpio_py', anonymous=True)
 
-	rospy.Subscriber("Num", String, callback)
+	rospy.Subscriber("chatter", String, callback)
 
 
 	# spin() simply keeps python from exiting until this node is stopped
